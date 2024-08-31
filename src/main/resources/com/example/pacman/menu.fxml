@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="740.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.pacman.controlmenu">
+   <children>
+      <Label layoutX="256.0" layoutY="14.0" text="Maps" textFill="#1f8de8" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Bodoni MT Bold" size="96.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="CENTER" layoutX="299.0" layoutY="258.0" mnemonicParsing="false" onAction="#swichtomap1" prefHeight="77.0" prefWidth="163.0" style="-fx-background-color: #4682B4;" text="map1" textFill="SNOW">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="299.0" layoutY="372.0" mnemonicParsing="false" onAction="#swichtomap2" prefHeight="77.0" prefWidth="163.0" style="-fx-background-color: #4682B4;" text="map2" textFill="SNOW">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

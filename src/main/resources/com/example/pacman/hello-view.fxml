@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="790.0" prefWidth="740.0" spacing="20.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pacman.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <GridPane prefHeight="863.0" prefWidth="1170.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1072.0" minWidth="0.0" prefWidth="678.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="383.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="633.0" minHeight="10.0" prefHeight="633.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#swichtoS2" prefHeight="72.0" prefWidth="208.0" style="-fx-background-color: #4682B4;" text="play" textFill="SNOW" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="38.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="413.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../pm.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         
+             <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" prefHeight="121.0" prefWidth="1072.0" text="Pacman" textFill="#1f8de8">
+               <font>
+                  <Font name="Bodoni MT Bold" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
